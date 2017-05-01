@@ -2,15 +2,15 @@
 title: "Depth First Search"
 layout: post
 date: 2017-04-30 22:44
-image: /assets/images/markdown.jpg
+image: /assets/images/Boxing.jpg
 headerImage: false
 tag:
 - graph theory
 - algorithms
 star: true
 category: blog
-author: johndoe
-description: Markdown summary with different options
+author: Stylianos Kalamaras
+description: Depth First Search explained with pseudocode.
 ---
 
 <p align="center">
@@ -61,6 +61,7 @@ This function basically sets up some tracking parameters for the second function
 
 #### DFS-VISIT(G,u)
 
+This function first increments, then sets the time to d[u], and sets the color of the vertex u to gray (marking it visited). Then it checks the adjaceny matrix for vertex _u_ to see if any vertices are undiscovered by checking their color attribute. If the color is white, that means it is undiscovered. If it finds a node in the list that's white, it sets the parent to _u_, and then visits that node. Its important to note that everytime a node is visited, it is done so recursively. So the last node that is discovered will by the first node that will finish the sequence of the psuedocode from lines 8-10. (This is important because this will help introduce the parenthesis theorum) When the last node is visited, it will completely skip the for loop because there are no white nodes. It will execute sequence 8-10 which sets the color to black, increment the time and set it to f[u].
 
 
 <!-- ### Comum Elements
