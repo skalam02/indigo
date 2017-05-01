@@ -31,7 +31,36 @@ Your browser does not support the video tag.
 </video>
 
 
-### Pseudo Code of the Algorithm EXPLAINED from CLRS Text
+### Pseudocode of the DFS Algorithm
+
+DFS (G)
+    <br>1. &emsp;for each vertex _u_ in G.V &emsp;&emsp;&emsp;//For every vertex
+    <br>2. &emsp;&emsp;color[u] ==  "white" &emsp;&emsp;&emsp;//set vertex to white
+    <br>3. &emsp;&emsp;d[u] == _nil_ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//set the d[time] to nil
+    <br>4. &emsp;time == 0 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//initialize time to 0
+    <br>5. &emsp;for each vertex _u_ in G.V &emsp;&emsp;//for every vertex
+    <br>6. &emsp;&emsp;if color[u] == WHITE; &emsp;&emsp;//if the color is white
+    <br>7. &emsp;&emsp;&emsp;DFS-VISIT(G,u); &emsp;&emsp;&emsp;//visit that vertex
+
+DFS-VISIT (G,u)
+<br>1. &emsp;time += 1 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//increment time
+<br>2. &emsp;d[u] = time &emsp;&emsp;&emsp;&emsp;&emsp;//set time of discovery
+<br>3. &emsp;color[u] = "GRAY" &emsp;&emsp;&emsp;//set vertex to gray
+<br>4. &emsp;for each _v_ in Adj[u] &emsp;&emsp;//for every vertex v adjacent to u
+<br>5. &emsp;&emsp;if color[v] == "WHITE" &emsp;//if v is white
+<br>6. &emsp;&emsp;&emsp;parent[v] = u &emsp;&emsp;&emsp;//set v's parent to u
+<br>7. &emsp;&emsp;&emsp;DFS-VISIT(G,v) &emsp;&emsp;//revursive call to v
+<br>8. &emsp;color[u] = BLACK &emsp;&emsp;//blacken u; it is finished
+<br>9. &emsp;time += 1 &emsp;&emsp;&emsp;&emsp;//increment time
+<br>10.&emsp;f[u] =  time &emsp;&emsp;&emsp;&emsp;//set final time
+
+### Explanation of the Pseudocode
+#### DFS(G)
+
+This function basically sets up some tracking parameters for the second function (DFS-VISIT (G,u)) to work. It sets every nodes color attribute to white, or you can think of it as a color array which stores the color of a particular a vertice at a given time. This will help the algorithm not repeat visits while its recursively calling through the graph. The d[u] is the discovery time of node _u_, which stores the time that the node was discovered. So every time a node is visited the time is first incremented, then set for that nodes d[u]. The d[] value for every node is initally set to nil, which will be changed once they are discovered. The second for loop initiates the second function, with any source node _u_.
+
+#### DFS-VISIT(G,u)
+
 
 
 <!-- ### Comum Elements
@@ -227,10 +256,11 @@ $(window).scroll(function() {
 
 });
 {% endhighlight %} -->
-
+<!-- 
 [1]: http://daringfireball.net/projects/markdown/
 [2]: http://www.fileformat.info/info/unicode/char/2163/index.htm
 [3]: http://www.markitdown.net/
 [4]: http://daringfireball.net/projects/markdown/basics
 [5]: http://daringfireball.net/projects/markdown/syntax
 [6]: http://kune.fr/wp-content/uploads/2013/10/ghost-blog.jpg
+ -->
