@@ -9,7 +9,7 @@ tag:
 - algorithms
 star: true
 category: blog
-author: Stylianos Kalamaras
+author: johndoe
 description: Depth First Search explained with pseudocode.
 ---
 
