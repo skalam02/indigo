@@ -1,6 +1,6 @@
 # main text of home
-name: John Doe
-bio: A Man who travels the world eating noodles
+name: Stylianos Kalamaras
+bio: A computer scientist with a passion for Boxing.
 
 # twitter summary info
 description: A blog about technology and stuff related
@@ -8,7 +8,7 @@ description: A blog about technology and stuff related
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/profile.jpg
+picture: assets/images/Boxing.jpg
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
@@ -35,12 +35,12 @@ disqus:
 
 # if you don't have any of social below, comment the line
 facebook: myfacebook
-twitter: mytwitter
+#twitter: mytwitter
 # google: mygoogle
-# instagram: myinstagram
+instagram: thegoldengreek
 # pinterest: mypinterest
 # linkedin: mylinkedin
-# youtube: myyoutube
+youtube: myyoutube
 # spotify: myspotify
 github: mygithub
 # lastfm: mylastfm
@@ -53,10 +53,10 @@ email: myemail@gmail.com
 
 authors:
     johndoe:
-        name: John Doe
-        bio: A Man who travels the world eating noodles
+        name: Stylianos Kalamaras
+        bio: A computer scientist with a passion for Boxing
         external-image: false
-        picture: assets/images/profile.jpg
+        picture: assets/images/Boxing.jpg
         twitter: johndoe
     jamesfoster:
         name: James Foster
