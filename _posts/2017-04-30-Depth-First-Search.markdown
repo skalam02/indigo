@@ -24,10 +24,8 @@ Depth first search is an algorithm which traverses a tree or graph. This algorit
 
 ## Visual Representation
 
-<p align="center">
-  <img src="/assets/images/DFS_Traversal.mov">
-</p>
-<video width="320" height="240" autoplay>
+
+<video width="640" height="480" autoplay>
   <source src="/assets/images/DFS_Traversal.mov" type="video/mp4">
 Your browser does not support the video tag.
 </video>
