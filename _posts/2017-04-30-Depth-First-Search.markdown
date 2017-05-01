@@ -22,7 +22,7 @@ description: Markdown summary with different options
 Depth first search is an algorithm which traverses a tree or graph. This algorithm searches each branch to maximum depth until there are no unvisited nodes, then backtracks until every node is searched. This runs on O(\|V\|+\|E\|) for full a full traversal.
 
 
-## Visual Representation
+## Visual Representation for DFS of an Undirected Graph
 
 
 <video width="640" height="480" autoplay>
@@ -34,7 +34,7 @@ Your browser does not support the video tag.
 
 
 
-### Comum Elements
+<!-- ### Comum Elements
 - [Basic formatting](#basic-formatting)
 - [Headings](#headings)
 - [Lists](#lists)
@@ -42,7 +42,7 @@ Your browser does not support the video tag.
 - [Urls](#urls)
 - [Horizontal Rule](#horizontal-rule)
 - [Images](#images)
-- [Code](#code)
+- [Code](#code) -->
 
 
 <!-- ## Basic formatting
