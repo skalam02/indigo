@@ -31,7 +31,7 @@ Your browser does not support the video tag.
 </video>
 
 
-
+### Pseudo Code of the Algorithm EXPLAINED from CLRS Text
 
 
 <!-- ### Comum Elements
@@ -177,7 +177,7 @@ Markdown can also contain images. I'll need to add something here sometime.
 
 --- -->
 
-## Code
+<!-- ## Code
 
 A HTML Example:
 
@@ -226,7 +226,7 @@ $(window).scroll(function() {
     }
 
 });
-{% endhighlight %}
+{% endhighlight %} -->
 
 [1]: http://daringfireball.net/projects/markdown/
 [2]: http://www.fileformat.info/info/unicode/char/2163/index.htm
