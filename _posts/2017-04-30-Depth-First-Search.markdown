@@ -61,8 +61,16 @@ This function basically sets up some tracking parameters for the second function
 
 #### DFS-VISIT(G,u)
 
-This function first increments, then sets the time to d[u], and sets the color of the vertex u to gray (marking it visited). Then it checks the adjaceny matrix for vertex _u_ to see if any vertices are undiscovered by checking their color attribute. If the color is white, that means it is undiscovered. If it finds a node in the list that's white, it sets the parent to _u_, and then visits that node. Its important to note that everytime a node is visited, it is done so recursively. So the last node that is discovered will by the first node that will finish the sequence of the psuedocode from lines 8-10. (This is important because this will help introduce the parenthesis theorum) When the last node is visited, it will completely skip the for loop because there are no white nodes. It will execute sequence 8-10 which sets the color to black, increment the time and set it to f[u].
+Every time DFS-VISIT is called it increments the global time. Time is then stored into the d[u] array and sets the color of the vertex _u_ to gray (marking it visited).  It then checks the adjacency list for any unvisited nodes. If a white node is found in the adjacency list, it means that it hasn't been discovered yet so it sets the parent of the discovered node _v_ to the current node _u_. Then the DFS-VISIT function is called on _v_ and the process repeats until all nodes are discovered. Its important to note that everytime a node is visited, it is done so recursively. So the last node that is discovered will by the first node that will finish the sequence of the psuedocode from lines 8-10. (This is important because this will help understand the parenthesis theorum) When the last node is visited, it will completely skip the for loop because there are no white nodes. It will execute sequence 8-10 which sets the color to black, increment the time and set it to f[u]. It will then pop the Activation record of the current stack, and point to the activation record of _v_'s parent. This process will continue until the algorithm finishes.
 
+
+### Parenthesis Theorum
+
+Theorem 22.7 (Parenthesis theorem)
+In any depth-first search of a (directed or undirected) graph G = (V,E) for any two vertices _u_ and _v_, exactly one of the following three conditions holds:
+<br>1. d[u] < d[v] < d[v] < f[v] are entirely disjoint, and graph G is a forest,
+<br>2. d[v] < d[u] < f[u] < f[v] where _u_ is a decendant of _v_, or 
+<br>3. d[u] < d[v] < f[v] < f[u] where _v_ is a descendant of _u_ in a depth-first tree.
 
 <!-- ### Comum Elements
 - [Basic formatting](#basic-formatting)
