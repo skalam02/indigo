@@ -34,27 +34,27 @@ disqus:
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: myfacebook
+facebook: stylianos.kalamaras.9
 #twitter: mytwitter
 # google: mygoogle
 instagram: thegoldengreek
 # pinterest: mypinterest
 # linkedin: mylinkedin
-youtube: myyoutube
+youtube: spartaneliteboxing
 # spotify: myspotify
-github: mygithub
+github: skalam02
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: username
 medium: medium
 # vimeo: myvimeo
-email: myemail@gmail.com
+email: skalamaras02@gmail.com
 
 authors:
     johndoe:
         name: Stylianos Kalamaras
-        bio: A computer scientist with a passion for Boxing
+        bio: Computer Scientist/Competitive Boxer
         external-image: false
         picture: assets/images/Boxing.jpg
         twitter: johndoe
